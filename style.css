@@ -1,0 +1,105 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    background-image: url(./img/fancy_restaurant.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    color: #f4f4f4;
+    font-size: 1.6rem;
+}
+
+button {
+    font-family: inherit;
+    color: inherit;
+    cursor: pointer;
+    border-style: none;
+    outline: none;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 100vh;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 2rem;
+    background-color: rgba(0, 0, 0, 0.7);
+
+}
+
+.rest-name {
+    margin-bottom: 1rem;
+    font-family: 'Tangerine', cursive;
+    font-size: 7rem;
+}
+
+
+.button-nav {
+    padding: 1rem;
+    font-size: 1.4rem;
+    background-color: transparent;
+    border-bottom: 2px solid transparent;
+    transition: transform 0.3s;
+}
+
+.main {
+    max-width: 700px;
+    padding: 4rem;
+    margin: 6rem 0;
+    background-color: rgba(0, 0, 0, 0.8);
+
+}
+
+.home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 525px;
+    width: 618px;
+}
+
+.home p {
+    padding: .5rem;
+}
+
+.img-wrapper {
+    display: inline-block;
+    position: relative;
+    width: 300px;
+    height: 300px;
+    overflow: hidden;
+    border-radius: 50%;
+    margin: 2rem;
+}
+
+.img-wrapper img {
+    width: auto;
+    height: 100%;
+    margin-left: -50px;
+    
+}
+
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    width: 100%;
+    padding: 1rem;
+    background-color: rgba(0, 0, 0, 0.6);
+    font-size: 1.2rem;
+}
