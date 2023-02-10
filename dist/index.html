@@ -1,13 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;1,700&family=Tangerine:wght@400;700&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Restaurant</title>
 </head>
 <body>
     <script src="main.js"></script>
-    <div id="content"></div>
+    <div class="content" id="content">
+        <header class="header">
+            <h1 class="rest-name">Di Mortimer</h1>
+            <nav>
+                <button class="button-nav">Home</button>
+                <button class="button-nav">Menu</button>
+                <button class="button-nav">Contact</button>
+            </nav>
+        </header>
+        <main class="main" id="main">
+            <div class="home">
+                <p>Making the best pizza</p>
+                <p>Since 1997</p>
+                <div class="img-wrapper">
+                    <img src="img/pizza_frontpage.jpg" alt="Pizza">
+                </div>
+                <p>Order online or visit us!</p>
+            </div>
+        </main>
+        <footer class="footer">
+            <p>Angelo Martinez &copy; <script>document.write(new Date().getFullYear());</script></p>
+        </footer>
+    </div>
 </body>
 </html>
