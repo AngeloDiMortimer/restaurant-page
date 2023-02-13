@@ -60,7 +60,7 @@ const setActive = (button) => {
             button.classList.remove("active");
         }
     })
-
+    
     button.classList.add("active");
 }
 
