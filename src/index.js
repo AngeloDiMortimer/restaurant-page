@@ -1,1 +1,3 @@
-console.log("wudahel this works!");
+import initWebsite from "./website";
+
+initWebsite();
