@@ -1,4 +1,4 @@
-
+/* Creates Header */
 const createHeader = () => {
     const header = document.createElement("header");
     header.classList.add("header");
@@ -51,7 +51,7 @@ const createNav = () => {
     
 }
 
-/* adds "active" class to an element */
+/* adds "active" class to a button-nav element */
 const setActive = (button) => {
     const buttons = document.querySelectorAll(".button-nav");
     
@@ -64,6 +64,29 @@ const setActive = (button) => {
     button.classList.add("active");
 }
 
+/* Creates main */
+
+const createMain = () => {
+    const main = document.createElement("main");
+    main.classList.add("main");
+    main.setAttribute("id", "main");
+    return main;
+}
+
+/* Creates Footer */
+
+const createFooter = () => {
+    const footer = document.createElement("footer");
+    footer.classList.add("footer");
+    
+    const para = document.createElement("p");
+    para.textContent = `Angelo Martínez \u00A9 ${new Date().getFullYear()}`;
+
+    footer.appendChild(para);
+
+    return footer;
+}
+
 /* Initializes website */
 
 const initWebsite = () => {
@@ -71,6 +94,8 @@ const initWebsite = () => {
     const content = document.getElementById("content");
 
     content.appendChild(createHeader());
+    content.appendChild(createMain());
+    content.appendChild(createFooter());
 
 }
 
