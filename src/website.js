@@ -1,3 +1,5 @@
+import loadHome from "./home";
+
 /* Creates Header */
 const createHeader = () => {
     const header = document.createElement("header");
@@ -97,6 +99,7 @@ const initWebsite = () => {
     content.appendChild(createMain());
     content.appendChild(createFooter());
 
+    loadHome();
 }
 
 export default initWebsite;
