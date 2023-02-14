@@ -1,4 +1,5 @@
 import loadHome from "./home";
+import loadMenu from "./menu";
 
 /* Creates Header */
 const createHeader = () => {
@@ -25,6 +26,7 @@ const createNav = () => {
     homeButton.addEventListener("click", (e) => {
         if (e.target.classList.contains("active")) return;
         setActive(homeButton);
+        loadHome();
     });
 
     /* Menu Button */
@@ -34,6 +36,7 @@ const createNav = () => {
     menuButton.addEventListener("click", (e) => {
         if (e.target.classList.contains("active")) return;
         setActive(menuButton);
+        loadMenu();
     });
     
     /* Contact Button */
@@ -99,6 +102,7 @@ const initWebsite = () => {
     content.appendChild(createMain());
     content.appendChild(createFooter());
 
+    setActive(document.querySelector(".button-nav"));
     loadHome();
 }
 
