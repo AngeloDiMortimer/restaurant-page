@@ -1,5 +1,6 @@
 import loadHome from "./home";
 import loadMenu from "./menu";
+import loadContact from "./contact";
 
 /* Creates Header */
 const createHeader = () => {
@@ -46,6 +47,7 @@ const createNav = () => {
     contactButton.addEventListener("click", (e) => {
         if (e.target.classList.contains("active")) return;
         setActive(contactButton);
+        loadContact();
     });
 
     nav.appendChild(homeButton);
