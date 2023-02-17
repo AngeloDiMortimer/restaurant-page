@@ -55,6 +55,14 @@ button {
     transition: transform 0.3s;
 }
 
+.button-nav.active {
+    border-bottom: 2px solid #f4f4f4;
+}
+
+.button-nav:hover {
+    transform: translateY(-10%);
+}
+
 .main {
     max-width: 100%;
     padding: 4rem;
@@ -63,6 +71,8 @@ button {
 
 }
 
+/* Home */
+
 .home {
     display: flex;
     flex-direction: column;
@@ -70,6 +80,7 @@ button {
     justify-content: center;
     height: 525px;
     width: 618px;
+    animation: fadeIn 1.5s;
 }
 
 .home p {
@@ -95,10 +106,13 @@ button {
     margin-left: -50px;
 }
 
+/* Menu */
+
 .menu {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 4rem;
+    animation: fadeIn 1.5s;
 }
 
 .menu-item {
@@ -108,6 +122,13 @@ button {
     justify-content: center;
     height: auto;
     width: 300px;
+    padding: 2rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.menu-item:hover {
+    background-color:  rgba(99, 99, 99, 0.4);;
 }
 
 .menu-item h2 {
@@ -123,8 +144,8 @@ button {
 .menu-item .img-wrapper {
     display: inline-block;
     position: relative;
-    height: 300px;
-    width: 300px;
+    height: 250px;
+    width: 250px;
     overflow: hidden;
     border-radius: 10%;
     margin: 2rem;
@@ -135,6 +156,28 @@ button {
     max-height: 100%;
 }
 
+/* Contact */
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    animation: fadeIn 1.5s;
+}
+
+.contact p {
+    width: 100%;
+    padding: 1rem;
+}
+
+.contact img {
+    padding: 1rem;
+    opacity: 95%;
+}
+
+/* Footer */
+
 .footer {
     display: flex;
     align-items: center;
@@ -144,4 +187,16 @@ button {
     padding: 1rem;
     background-color: rgba(0, 0, 0, 0.6);
     font-size: 1.2rem;
+}
+
+/* Animations */
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
 }
